@@ -13,3 +13,15 @@ li {
 .green {
 	color: green;
 }
+.yellow {
+	color: yellow;
+}
+.italic {
+	font-style: italic;
+}
+.underlined {
+	text-decoration: underline;
+}
+a {
+	color: inherit;
+}
