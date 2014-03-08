@@ -18,3 +18,12 @@ function getElementsWithAtt(attribute) {
 
 	return matchingElements;
 }
+
+// get all elements with data-cycle-list attributes
+var classCycleElements = getElementsWithAtt("data-cycle-list");
+
+if (classCycleElements) {
+	for ( var i = 0; i < classCycleElements.length; i++ ) {
+		processCycle( classCycleElements[i] );
+	}
+}
