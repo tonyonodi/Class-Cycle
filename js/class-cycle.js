@@ -8,7 +8,7 @@ function getElementsWithAtt( attribute ) {
 	// Loop over all elements
 	for(var i = 0; i < allElements.length; i++) {
 		
-		var hasAttribute = allElements[i].getAttribute();
+		var hasAttribute = allElements[i].getAttribute("data-cycle-list");
 		
 		// push to array if attribute exists
 		if ( hasAttribute ) {
@@ -31,7 +31,7 @@ function processCycle( element ) {
 	// Loop over all child elements and append appropriate class.
 	for ( var i = 0; i < cycleChildren.length; i++ ) {		
 		var modulo = i % listLength;
-		var newClass = " " + cycleList[modulo];
+		var newClass = " " + cycleListArray[modulo];
 
 		// Append class.
 		cycleChildren[i].class += newClass;
