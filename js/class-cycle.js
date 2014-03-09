@@ -33,12 +33,14 @@ function processCycle( element ) {
 	}
 }
 
-// get all elements with data-cycle-list attributes
-var classCycleElements = getElementsWithAtt( "data-cycle-list" );
+function classCycle() {
+	// get all elements with data-cycle-list attributes
+	var classCycleElements = getElementsWithAtt( "data-cycle-list" );
 
-// Loops over all relevant elements and passes them to the main processCycle function
-if (classCycleElements) {
-	for ( var i = 0; i < classCycleElements.length; i++ ) {
-		processCycle( classCycleElements[i] );
+	// Loops over all relevant elements and passes them to the main processCycle function
+	if (classCycleElements) {
+		for ( var i = 0; i < classCycleElements.length; i++ ) {
+			processCycle( classCycleElements[i] );
+		}
 	}
 }
