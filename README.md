@@ -34,30 +34,25 @@ becomes...
 
 ...once Class Cycle is called. 
 
-Essentially you give a parent element a list of classes to loop through and it will go through the first, second, third etc. class appending it as a class to the first, second, third etc.top-level, child element of the parent node. There are probably a number of analagous tools in different languages but the one that comes to mind for me is [cycle] in Liquid
+Essentially you give a parent diva list of classes to loop through and it will go through the first, second, third etc. class appending it as a class to the first, second, third etc.top-level, child element of the parent node. There are probably a number of analagous tools in different languages but the one that comes to mind for me is [cycle] in Liquid
 
 This can be particularly useful when using layout tools like [gridset] or bootstrap's [grid system] *especially* when you're not sure how many elements your server is going to throw up.
 
-## Usage 
-
-Include the library in your page in the usual way (script tags, require etc.) then call the function with something along the lines of...
-
-```Javascript
-window.onload = classCycle();
-```
-
-That's it. If you have any elements with the "data-cycle-list" attribute it should find them and process accordingly.
-
 ## Plans for the Future
 * Pass muster with [Crockford].
-* Allow multiple "class lists" per "cycle list" (e.g. cycle through five classes but add another class for every two).
 * Clean up spaces at the start of added classes. 
 * Add a check to processCycle so that it only adds the class if it doesn't already exist.
 * Set up with grunt to auto-refresh and minify javascript.
 * Get married.
 * Buy a house.
 
+## License
+
+Class Cycle is released under the [MIT License].
+
+
 [cycle]: "http://docs.shopify.com/themes/liquid-basics/logic#cycle
 [gridset]: https://gridsetapp.com/
 [grid system]: http://getbootstrap.com/css/#grid
 [Crockford]: http://www.jslint.com/lint.html
+[MIT License]:(http://www.opensource.org/licenses/MIT)
