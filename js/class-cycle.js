@@ -1,19 +1,32 @@
 // Function to gets all elements with a certain attribute.
-function getElementsWithAtt( attribute ) {
+function getElementsWithAtt( attributePattern ) {
 	var matchingElements = [],	// Array is to be returned
 		allElements = document.getElementsByTagName( "*" );  // get all elements in document
 
 	// Loop over all elements
 	for( var i = 0; i < allElements.length; i++ ) {
-		
-		var hasAttribute = allElements[i].getAttribute( attribute );
-		
-		// push to array if attribute exists
-		if ( hasAttribute ) {
-			matchingElements.push( allElements[i] );
+		var currentElement = allElements[i],
+			allAttributes = currentElement.attributes;
+
+		for ( var j = 0; j < allAttributes.length; j++ ) {
+			var attributeNode = allAttributes[j],
+				attributeString = attributeNode.nodeName,
+				patternLength = attributePattern.length,
+				attributeSubStr = attributeString.substring( 0, patternLength );
+
+			if ( attributeSubStr == attributePattern ) {
+				var attributeDetails = [	// Array containing name of attribute and containing node
+					attributeString,
+					currentElement
+				]
+
+				// Push to main array
+				matchingElements.push( attributeDetails );				
+			}
 		}
 	}
 
+	console.log( matchingElements );
 	return matchingElements;
 }
 
@@ -35,7 +48,7 @@ function processCycle( element, classList ) {
 
 function classCycle() {
 	// get all elements with data-cycle-list attributes
-	var classCycleElements = getElementsWithAtt( "data-cycle-list" );
+	var classCycleElements = getElementsWithAtt( "data-cycle" );
 
 	// Loops over all relevant elements and passes them to the main processCycle function
 	if (classCycleElements) {
