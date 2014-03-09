@@ -1,5 +1,7 @@
 # Class Cycle
 
+Made by [Tony Onodi], tweet me with problems/suggestions; will try to fix.
+
 Small Javascript library I made for a friend. I lack the chutzpah to put what it does into words so it's probably best that I start with an example...
 
 ## Example
@@ -87,8 +89,9 @@ This can be particularly useful when using layout tools like [gridset] or bootst
 Class Cycle is released under the [MIT License].
 
 
+[Tony Onodi]: "https://twitter.com/tonyonodi"
 [cycle]: "http://docs.shopify.com/themes/liquid-basics/logic#cycle
 [gridset]: https://gridsetapp.com/
 [grid system]: http://getbootstrap.com/css/#grid
 [Crockford]: http://www.jslint.com/lint.html
-[MIT License]:(http://www.opensource.org/licenses/MIT)
+[MIT License]: "http://www.opensource.org/licenses/MIT""
