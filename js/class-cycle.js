@@ -52,7 +52,7 @@ function classCycle() {
 	// Loops over all relevant elements and passes them to the main processCycle function
 	if (classCycleElements) {
 		for ( var i = 0; i < classCycleElements.length; i++ ) {
-			var subArray = classCycleElements[i]
+			var subArray = classCycleElements[i];
 			processCycle( subArray[0], subArray[1] );
 		}
 	}
