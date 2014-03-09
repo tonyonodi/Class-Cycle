@@ -38,6 +38,16 @@ Essentially you give a parent element a list of classes to loop through and it w
 
 This can be particularly useful when using layout tools like [gridset] or bootstrap's [grid system] *especially* when you're not sure how many elements your server is going to throw up.
 
+## Usage 
+
+Include the library in your page in the usual way (script tags, require etc.) then call the function with something along the lines of...
+
+```Javascript
+window.onload = classCycle();
+```
+
+That's it. If you have any elements with the "data-cycle-list" attribute it should find them and process accordingly.
+
 ## Plans for the Future
 * Pass muster with [Crockford].
 * Allow multiple "class lists" per "cycle list" (e.g. cycle through five classes but add another class for every two).
