@@ -1,17 +1,16 @@
 // Function to gets all elements with a certain attribute.
 function getElementsWithAtt( attribute ) {
-	// Array is to be returned
-	var matchingElements = [],
-		allElements = document.getElementsByTagName("*");  // get all elements in document
+	var matchingElements = [],	// Array is to be returned
+		allElements = document.getElementsByTagName( "*" );  // get all elements in document
 
 	// Loop over all elements
-	for(var i = 0; i < allElements.length; i++) {
+	for( var i = 0; i < allElements.length; i++ ) {
 		
 		var hasAttribute = allElements[i].getAttribute( attribute );
 		
 		// push to array if attribute exists
 		if ( hasAttribute ) {
-			matchingElements.push(allElements[i]);
+			matchingElements.push( allElements[i] );
 		}
 	}
 
