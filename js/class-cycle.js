@@ -18,7 +18,7 @@ function getElementsWithAtt( attributePattern ) {
 				var attributeDetails = [	// Array containing name of attribute and containing node
 					currentElement,
 					attributeString					
-				]
+				];
 
 				// Push to main array
 				matchingElements.push( attributeDetails );				
@@ -30,7 +30,7 @@ function getElementsWithAtt( attributePattern ) {
 }
 
 function processCycle( element, classList ) {
-	var cycleChildren = element.children,	 // get all top level children of element
+	var cycleChildren = element.children,		// get all top level children of element
 		cycleListString = element.getAttribute( classList ),	// get list of classes to cycle through
 		cycleListArray = cycleListString.split( " " ),	// Arrayify the list
 		listLength = cycleListArray.length;
