@@ -17,9 +17,9 @@ function getElementsWithAtt( attribute ) {
 	return matchingElements;
 }
 
-function processCycle( element ) {
+function processCycle( element, classList ) {
 	var cycleChildren = element.children,	 // get all top level children of element
-		cycleListString = element.getAttribute( "data-cycle-list" ),	// get list of classes to cycle through
+		cycleListString = element.getAttribute( classList ),	// get list of classes to cycle through
 		cycleListArray = cycleListString.split( " " ),	// Arrayify the list
 		listLength = cycleListArray.length;
 
@@ -40,7 +40,7 @@ function classCycle() {
 	// Loops over all relevant elements and passes them to the main processCycle function
 	if (classCycleElements) {
 		for ( var i = 0; i < classCycleElements.length; i++ ) {
-			processCycle( classCycleElements[i] );
+			processCycle( classCycleElements[i], "data-cycle-list" );
 		}
 	}
 }
