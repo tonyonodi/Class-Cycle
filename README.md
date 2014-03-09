@@ -51,7 +51,9 @@ That's it. If you have any elements with the "data-cycle-list" attribute it shou
 ## Plans for the Future
 * Pass muster with [Crockford].
 * Allow multiple "class lists" per "cycle list" (e.g. cycle through five classes but add another class for every two).
-* Clean up spaces at the start of added classes.
+* Clean up spaces at the start of added classes. 
+* Add a check to processCycle so that it only adds the class if it doesn't already exist.
+* Set up with grunt to auto-refresh and minify javascript.
 * Get married.
 * Buy a house.
 
