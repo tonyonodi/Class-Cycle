@@ -41,6 +41,7 @@ This can be particularly useful when using layout tools like [gridset] or bootst
 ## Plans for the Future
 * Pass muster with [Crockford].
 * Allow multiple "class lists" per "cycle list" (e.g. cycle through five classes but add another class for every two).
+* Clean up spaces at the start of added classes.
 * Get married.
 * Buy a house.
 
