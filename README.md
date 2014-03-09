@@ -51,6 +51,7 @@ That's it. If you have any elements with the "data-cycle-list" attribute it shou
 ## Plans for the Future
 * Pass muster with [Crockford].
 * Allow multiple "class lists" per "cycle list" (e.g. cycle through five classes but add another class for every two).
+* Clean up spaces at the start of added classes.
 * Get married.
 * Buy a house.
 
