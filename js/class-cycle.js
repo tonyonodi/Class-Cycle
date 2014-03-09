@@ -16,8 +16,8 @@ function getElementsWithAtt( attributePattern ) {
 
 			if ( attributeSubStr == attributePattern ) {
 				var attributeDetails = [	// Array containing name of attribute and containing node
-					attributeString,
-					currentElement
+					currentElement,
+					attributeString					
 				]
 
 				// Push to main array
@@ -26,7 +26,6 @@ function getElementsWithAtt( attributePattern ) {
 		}
 	}
 
-	console.log( matchingElements );
 	return matchingElements;
 }
 
@@ -53,7 +52,8 @@ function classCycle() {
 	// Loops over all relevant elements and passes them to the main processCycle function
 	if (classCycleElements) {
 		for ( var i = 0; i < classCycleElements.length; i++ ) {
-			processCycle( classCycleElements[i], "data-cycle-list" );
+			var subArray = classCycleElements[i]
+			processCycle( subArray[0], subArray[1] );
 		}
 	}
 }
