@@ -41,9 +41,8 @@ This can be particularly useful when using layout tools like [gridset] or bootst
 ## Plans for the Future
 * Pass muster with [Crockford].
 * Allow multiple "class lists" per "cycle list" (e.g. cycle through five classes but add another class for every two).
-* Clean up spaces at the start of added classes.
-* **Abstract processCycle function so that it takes a node and data-cycle-list as an argument.*** 
-* **Change getElementsWithAtt function so that it searches for attribute + anyText.**
+* Clean up spaces at the start of added classes. 
+* **Change getElementsWithAtt function so that it searches for attribute + anyTextand returns an array with each entry consisting of attribute + anyText and the node to which it is attributed.**
 * **Add a check to processCycle so that it only adds the class if it doesn't already exist.**
 * **Set up with grunt to auto-refresh and minify javascript.**
 * Get married.
