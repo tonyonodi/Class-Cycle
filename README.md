@@ -34,7 +34,7 @@ becomes...
 
 ...once Class Cycle is called. 
 
-Essentially you give a parent diva list of classes to loop through and it will go through the first, second, third etc. class appending it as a class to the first, second, third etc.top-level, child element of the parent node. There are probably a number of analagous tools in different languages but the one that comes to mind for me is [cycle] in Liquid
+Essentially you give a parent element a list of classes to loop through and it will go through the first, second, third etc. class appending it as a class to the first, second, third etc.top-level, child element of the parent node. There are probably a number of analagous tools in different languages but the one that comes to mind for me is [cycle] in Liquid
 
 This can be particularly useful when using layout tools like [gridset] or bootstrap's [grid system] *especially* when you're not sure how many elements your server is going to throw up.
 
