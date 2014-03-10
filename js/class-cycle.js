@@ -38,10 +38,16 @@ function processCycle( element, classList ) {
 	// Loop over all child elements and append appropriate class.
 	for ( var i = 0; i < cycleChildren.length; i++ ) {		
 		var modulo = i % listLength,
+			childElement = cycleChildren[i],
+			hasClasses = childElement.className.length,	// flag for existing classes
+			spacer,
 			newClass = " " + cycleListArray[ modulo ];
 
+		// add space if child element has classes
+		spacer = ( hasClasses ) ? " " : "";
+
 		// Append class.
-		cycleChildren[i].className += newClass;
+		childElement.className += spacer + newClass;
 	}
 }
 
