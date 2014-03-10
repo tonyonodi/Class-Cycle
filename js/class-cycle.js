@@ -41,10 +41,13 @@ function processCycle( element, classList ) {
 			childElement = cycleChildren[i],
 			hasClasses = childElement.className.length,	// flag for existing classes
 			spacer,
-			newClass = " " + cycleListArray[ modulo ];
+			newClass;
 
 		// add space if child element has classes
 		spacer = ( hasClasses ) ? " " : "";
+
+		// Create string for new class.
+		newClass = cycleListArray[ modulo ];
 
 		// Append class.
 		childElement.className += spacer + newClass;
