@@ -1,6 +1,6 @@
 # Class Cycle
 
-Made by [Tony Onodi], tweet me with problems/suggestions; will try to fix.
+Made by [Tony Onodi](http://twitter.com/tonyonodi), tweet me with problems/suggestions; will try to fix.
 
 Small Javascript library I made for a friend. I lack the chutzpah to put what it does into words so it's probably best that I start with an example...
 
@@ -72,12 +72,12 @@ becomes...
 	</ul>
 ```
 
-Essentially you give a parent diva list of classes to loop through and it will go through the first, second, third etc. class appending it as a class to the first, second, third etc.top-level, child element of the parent node. There are probably a number of analagous tools in different languages but the one that comes to mind for me is [cycle] in Liquid
+Essentially you give a parent div a list of classes to loop through and it will go through the first, second, third etc. class appending it as a class to the first, second, third etc. top-level, child element of the parent node. There are probably a number of analagous tools in different languages but the one that comes to mind for me is [cycle](http://docs.shopify.com/themes/liquid-basics/logic#cycle) in Liquid
 
-This can be particularly useful when using layout tools like [gridset] or bootstrap's [grid system] *especially* when you're not sure how many elements your server is going to throw up.
+This can be particularly useful when using layout tools like [gridset](https://gridsetapp.com/) or bootstrap's [grid system](http://getbootstrap.com/css/#grid) *especially* when you're not sure how many elements your server is going to throw up.
 
 ## Plans for the Future
-* Pass muster with [Crockford].
+* Pass muster with [Crockford](http://www.jslint.com/).
 * Clean up spaces at the start of added classes. 
 * Add a check to processCycle so that it only adds the class if it doesn't already exist.
 * Set up with grunt to auto-refresh and minify javascript.
@@ -86,12 +86,4 @@ This can be particularly useful when using layout tools like [gridset] or bootst
 
 ## License
 
-Class Cycle is released under the [MIT License].
-
-
-[Tony Onodi]: "https://twitter.com/tonyonodi"
-[cycle]: "http://docs.shopify.com/themes/liquid-basics/logic#cycle
-[gridset]: https://gridsetapp.com/
-[grid system]: http://getbootstrap.com/css/#grid
-[Crockford]: http://www.jslint.com/lint.html
-[MIT License]: "http://www.opensource.org/licenses/MIT""
+Class Cycle is released under the [MIT License](http://www.opensource.org/licenses/MIT).
